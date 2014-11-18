@@ -1,6 +1,29 @@
 <!doctype html> <html class="no-js" ng-app="shaibaApp" ng-cloak ng-strict-di ng-controller="IndexCtrl"> <head> <meta charset="utf-8"> <title ng-bind="Title.getTitle()"></title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="icon" href="http://localhost:9000/images/fav.ico" type="image/x-icon"> <link rel="shortcut icon" type="images/x-icon" href="img/fav.ico"> <link type="image/x-icon" href="images/fav.ico"> <link rel="stylesheet" href="styles/vendor.c492fbb5.css"> <link rel="stylesheet" href="styles/main.5d809810.css">  <body> <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> <!-- Add your site or application content here --> <!--<div class="container"> <div class="header"> <div> </div> <div> <ul class="nav nav-pills pull-left"> <img ng-show="showFbLogin" src="images/fblogin.5e21e7ee.png" ng-click="loginFacebook()" class="fbbutton"> <li><a ng-href="#/admin" ng-show="isAdmin"><span class="glyphicon glyphicon-cog nav-admin"></a></li> <li><h5 class="fbwelcome" ng-show="isLoggedIn" class="text-muted">{{ welcomeMsg }}</h5></li> </ul> <ul class="nav nav-pills pull-right" ng-repeat="item in menuItems"> <li><a ng-href="{{item.href}}"><span class="{{item.class}}" ng-class="{ 'active': $index == selectedIndex }" ng-click="item.openmodal"></a></li> </ul> </div> </div>--> <div ng-view="" class="slide"></div> <!--<div class="footer"> <div style="height: 50px"> <alert ng-repeat="alert in alerts" type="{{ alert.type }}" close="alert.close()" style="direction: RTL"> <strong>{{ alert.msg }}</strong> </alert> </div> --><!--<p><span class="glyphicon glyphicon-heart"></span> from the Consumer team.</p>--> </div> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    <![endif]--> <!-- Add your site or application content here --> <!--<div class="container">
+
+      <div class="header">
+          <div >
+
+
+          </div>
+           <div>
+               <ul class="nav nav-pills pull-left">
+               <img ng-show="showFbLogin" src="images/fblogin.5e21e7ee.png" ng-click="loginFacebook()" class="fbbutton"/>
+               <li><a ng-href="#/admin" ng-show="isAdmin"><span class="glyphicon glyphicon-cog nav-admin"/></a></li>
+               <li><h5 class="fbwelcome" ng-show="isLoggedIn" class="text-muted">{{ welcomeMsg }}</h5></li>
+               </ul>
+                <ul class="nav nav-pills pull-right" ng-repeat="item in menuItems">
+                    <li><a ng-href="{{item.href}}"><span class="{{item.class}}" ng-class="{ 'active': $index == selectedIndex }" ng-click="item.openmodal"/></a></li>
+                </ul>
+            </div>
+      </div>--> <div ng-view="" class="slide"></div> <!-- <div class="footer">
+          <div style="height: 50px;">
+              <alert ng-repeat="alert in alerts" type="{{ alert.type }}" close="alert.close()" style="direction: RTL">
+              <strong>{{ alert.msg }}</strong>
+              </alert>
+          </div>--> <!--<p><span class="glyphicon glyphicon-heart"></span> from the Consumer team.</p>--> <!-- </div>
+    </div>--> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
@@ -8,4 +31,4 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');</script> <!--[if lt IE 9]>
     <script src="scripts/oldieshim.ff90b0fb.js"></script>
-    <![endif]--> <script src="scripts/vendor.9079211e.js"></script> <!-- build:js({.tmp,app}) scripts/scripts.js --> <script src="scripts/app.js"></script> <script src="scripts/controllers/main.js"></script> <script src="scripts/controllers/about.js"></script> <script src="scripts/directives/aboutdir.js"></script> <script src="scripts/services/parse.js"></script> <script src="scripts/directives/onkeyup.js"></script> <script src="scripts/controllers/hall.js"></script> <script src="scripts/services/appalert.js"></script> <script src="scripts/services/facebook.js"></script> <script src="scripts/directives/autocomplete.js"></script> <script src="scripts/controllers/index.js"></script> <script src="scripts/services/title.js"></script> <script src="scripts/directives/favstar.js"></script> <script src="scripts/services/shareddata.js"></script> <script src="scripts/controllers/admin.js"></script> <script src="scripts/controllers/mobile.js"></script> <script src="scripts/controllers/info.js"></script> <!-- endbuild -->  
+    <![endif]--> <script src="scripts/vendor.9079211e.js"></script> <script src="scripts/scripts.e6e1709e.js"></script>  
